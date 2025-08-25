@@ -1,0 +1,61 @@
+{
+  "name": "secure-distributed-hash",
+  "version": "1.0.0",
+  "description": "Distributed password security system using chaotic hash functions across multiple servers",
+  "main": "server/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "python python_server.py",
+    "dev": "python python_server.py",
+    "test": "node tests/test.js",
+    "build": "npm run build:client",
+    "build:client": "mkdir -p dist && cp -r public/* dist/",
+    "serve": "cd public && python -m http.server 8080"
+  },
+  "keywords": [
+    "security",
+    "authentication",
+    "password",
+    "hash",
+    "distributed",
+    "chaos-theory",
+    "cryptography",
+    "multi-server",
+    "password-security"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "url": "https://github.com/yourusername"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/secure-distributed-hash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/secure-distributed-hash/issues"
+  },
+  "homepage": "https://yourusername.github.io/secure-distributed-hash",
+  "engines": {
+    "node": ">=14.0.0",
+    "python": ">=3.7"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "nodemon": "^2.0.20"
+  },
+  "files": [
+    "server/",
+    "public/",
+    "config/",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

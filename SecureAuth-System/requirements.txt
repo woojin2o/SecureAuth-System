@@ -1,0 +1,36 @@
+# Flask 웹 프레임워크
+flask>=2.3.0
+
+# CORS 지원 (Cross-Origin Resource Sharing)
+flask-cors>=4.0.0
+
+# JSON 처리 (Python 내장이지만 명시적 표기)
+# json - 내장 모듈
+
+# 수학 연산 (Python 내장)
+# math - 내장 모듈
+
+# 난수 생성 (Python 내장)
+# random - 내장 모듈
+
+# 문자열 처리 (Python 내장)
+# string - 내장 모듈
+
+# 날짜/시간 처리 (Python 내장)
+# datetime - 내장 모듈
+
+# 운영체제 인터페이스 (Python 내장)
+# os - 내장 모듈
+
+# 개발 및 테스트용 의존성 (선택사항)
+# pytest>=7.0.0  # 테스트 프레임워크
+# pytest-flask>=1.2.0  # Flask 앱 테스트
+# python-dotenv>=1.0.0  # 환경변수 관리
+
+# 프로덕션 배포용 (선택사항)
+# gunicorn>=21.0.0  # WSGI 서버
+# uwsgi>=2.0.21  # 다른 WSGI 서버 옵션
+
+# 보안 강화용 (선택사항)
+# cryptography>=41.0.0  # 추가 암호화 기능
+# bcrypt>=4.0.0  # 기존 해시와 비교용

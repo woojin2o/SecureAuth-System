@@ -1,0 +1,43 @@
+MIT License
+
+Copyright (c) 2025 Secure Distributed Hash Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Additional Information:
+
+This software implements a distributed password security system using chaotic 
+hash functions. The algorithm distributes password verification across multiple 
+virtual servers to enhance security through:
+
+1. Chaotic Random Number Generation (ChaoticRNG)
+2. Multi-server hash fragment distribution
+3. Advanced cryptographic mixing techniques
+
+For security-critical applications, users should:
+- Conduct independent security audits
+- Implement additional security measures as needed
+- Follow current cryptographic best practices
+- Consider regulatory compliance requirements
+
+The authors make no claims about the cryptographic strength or suitability
+for any particular security application. Users assume full responsibility
+for evaluating the appropriateness of this software for their use case.

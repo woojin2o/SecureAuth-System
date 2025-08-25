@@ -1,0 +1,367 @@
+/* public/styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    color: white;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #4CAF50;
+}
+
+.main-content {
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+    align-items: center;
+}
+
+.page {
+    display: none;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.page.active {
+    display: block;
+}
+
+/* 사용자 사이트 스타일 */
+.user-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.site-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.btn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 5px;
+    width: 100%;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.auth-tabs {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.auth-tab {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.auth-tab.active {
+    border-bottom-color: #667eea;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.auth-content {
+    display: none;
+}
+
+.auth-content.active {
+    display: block;
+}
+
+/* 서버 관리 스타일 */
+.server-container {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.server-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.server-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.server-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.server-card.active {
+    border-color: #4CAF50;
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+}
+
+.server-card.error {
+    border-color: #f44336;
+    box-shadow: 0 0 20px rgba(244, 67, 54, 0.3);
+}
+
+.server-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.server-name {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.server-status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.status-online {
+    background: rgba(76, 175, 80, 0.3);
+    color: #4CAF50;
+}
+
+.status-offline {
+    background: rgba(244, 67, 54, 0.3);
+    color: #f44336;
+}
+
+.server-info {
+    color: #b0b0b0;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.server-data {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 12px;
+    word-break: break-all;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.server-controls {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.control-btn {
+    background: linear-gradient(45deg, #74b9ff, #0984e3);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.control-btn.danger {
+    background: linear-gradient(45deg, #ff7675, #d63031);
+}
+
+.status-message {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.success {
+    background: rgba(76, 175, 80, 0.3);
+    border: 1px solid #4CAF50;
+}
+
+.error {
+    background: rgba(244, 67, 54, 0.3);
+    border: 1px solid #f44336;
+}
+
+.hash-display {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    font-family: monospace;
+    font-size: 12px;
+    word-break: break-all;
+    line-height: 1.5;
+}
+
+.user-list {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-item:last-child {
+    border-bottom: none;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .main-content {
+        margin-top: 120px;
+        padding: 10px;
+    }
+    
+    .user-container, .server-container {
+        padding: 20px;
+    }
+    
+    .server-grid {
+        grid-template-columns: 1fr;
+    }
+}
